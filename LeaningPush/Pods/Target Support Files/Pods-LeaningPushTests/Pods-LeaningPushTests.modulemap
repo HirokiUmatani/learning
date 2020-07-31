@@ -1,6 +1,0 @@
-framework module Pods_LeaningPushTests {
-  umbrella header "Pods-LeaningPushTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
