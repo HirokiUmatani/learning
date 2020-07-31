@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,12 @@
 		B4AF768324D3F0E800F2C0B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AF768124D3F0E800F2C0B2 /* LaunchScreen.storyboard */; };
 		B4AF768E24D3F0E800F2C0B2 /* LeaningPushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF768D24D3F0E800F2C0B2 /* LeaningPushTests.swift */; };
 		B4AF769924D3F0E800F2C0B2 /* LeaningPushUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF769824D3F0E800F2C0B2 /* LeaningPushUITests.swift */; };
+		E91E151824D3F96300332BB7 /* SecondMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E151624D3F96300332BB7 /* SecondMainView.swift */; };
+		E91E151924D3F96300332BB7 /* SecondMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91E151724D3F96300332BB7 /* SecondMainView.xib */; };
+		E91E151C24D3F9E800332BB7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E151A24D3F9E800332BB7 /* SecondViewController.swift */; };
+		E91E151D24D3F9E800332BB7 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91E151B24D3F9E800332BB7 /* SecondViewController.xib */; };
+		E91E152124D3FC2500332BB7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E151F24D3FC2500332BB7 /* TableViewCell.swift */; };
+		E91E152224D3FC2500332BB7 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91E152024D3FC2500332BB7 /* TableViewCell.xib */; };
 		F566CA796C4AF9D09EE3743E /* Pods_LeaningPushTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C63A3241209345E7B29F0EED /* Pods_LeaningPushTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +67,12 @@
 		BEA76CBD3FD2826D7B84DC34 /* Pods_LeaningPush_LeaningPushUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeaningPush_LeaningPushUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C63A3241209345E7B29F0EED /* Pods_LeaningPushTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeaningPushTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41DECE01B27327A489B56EA /* Pods_LeaningPush.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LeaningPush.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E91E151624D3F96300332BB7 /* SecondMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainView.swift; sourceTree = "<group>"; };
+		E91E151724D3F96300332BB7 /* SecondMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondMainView.xib; sourceTree = "<group>"; };
+		E91E151A24D3F9E800332BB7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E91E151B24D3F9E800332BB7 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
+		E91E151F24D3FC2500332BB7 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E91E152024D3FC2500332BB7 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +113,6 @@
 				6EBE0BB0211C02E3C01D37AA /* Pods-LeaningPushTests.debug.xcconfig */,
 				166AFAB9B62DDAE46836BED5 /* Pods-LeaningPushTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +151,7 @@
 		B4AF767524D3F0E700F2C0B2 /* LeaningPush */ = {
 			isa = PBXGroup;
 			children = (
+				E91E151324D3F8FE00332BB7 /* Second */,
 				B4AF767624D3F0E700F2C0B2 /* AppDelegate.swift */,
 				B4AF767824D3F0E700F2C0B2 /* SceneDelegate.swift */,
 				B4AF767A24D3F0E700F2C0B2 /* ViewController.swift */,
@@ -167,6 +179,43 @@
 				B4AF769A24D3F0E800F2C0B2 /* Info.plist */,
 			);
 			path = LeaningPushUITests;
+			sourceTree = "<group>";
+		};
+		E91E151324D3F8FE00332BB7 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				E91E151524D3F94C00332BB7 /* View */,
+				E91E151424D3F94100332BB7 /* Controller */,
+				E91E151E24D3FB3800332BB7 /* Cell */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		E91E151424D3F94100332BB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E91E151A24D3F9E800332BB7 /* SecondViewController.swift */,
+				E91E151B24D3F9E800332BB7 /* SecondViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E91E151524D3F94C00332BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E91E151624D3F96300332BB7 /* SecondMainView.swift */,
+				E91E151724D3F96300332BB7 /* SecondMainView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E91E151E24D3FB3800332BB7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E91E151F24D3FC2500332BB7 /* TableViewCell.swift */,
+				E91E152024D3FC2500332BB7 /* TableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4AF768324D3F0E800F2C0B2 /* LaunchScreen.storyboard in Resources */,
+				E91E152224D3FC2500332BB7 /* TableViewCell.xib in Resources */,
 				B4AF768024D3F0E800F2C0B2 /* Assets.xcassets in Resources */,
 				B4AF767E24D3F0E700F2C0B2 /* Main.storyboard in Resources */,
+				E91E151924D3F96300332BB7 /* SecondMainView.xib in Resources */,
+				E91E151D24D3F9E800332BB7 /* SecondViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +463,9 @@
 				B4AF767B24D3F0E700F2C0B2 /* ViewController.swift in Sources */,
 				B4AF767724D3F0E700F2C0B2 /* AppDelegate.swift in Sources */,
 				B4AF767924D3F0E700F2C0B2 /* SceneDelegate.swift in Sources */,
+				E91E152124D3FC2500332BB7 /* TableViewCell.swift in Sources */,
+				E91E151C24D3F9E800332BB7 /* SecondViewController.swift in Sources */,
+				E91E151824D3F96300332BB7 /* SecondMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
