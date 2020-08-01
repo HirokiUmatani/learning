@@ -17,6 +17,7 @@ extension SecondMainViewDelegate {
 
 // MARK: - Property
 class SecondMainView: BaseView {
+    @IBOutlet weak var secondTable: UITableView!
     weak var delegate: SecondMainViewDelegate? = nil
 }
 
@@ -24,13 +25,32 @@ class SecondMainView: BaseView {
 extension SecondMainView {
     override func awakeFromNib() {
         super.awakeFromNib()
+        setDataSource()
+        loadCell()
     }
 }
 
 // MARK: - Protocol
-extension SecondMainView {
+extension SecondMainView: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = secondTable.dequeueReusableCell(withIdentifier: SecondMainViewCell.className, for: indexPath) as? SecondMainViewCell else {
+            return UITableViewCell()
+        }
+        return cell
+    }
+    
 }
 
 // MARK: - method
 extension SecondMainView {
+    func setDataSource() {
+        secondTable.dataSource = self
+    }
+    func loadCell() {
+        loadTableViewCellFromXib(tableView: secondTable, cellName: SecondMainViewCell.className)
+    }
 }
