@@ -41,7 +41,9 @@ extension TopMainViewController {
 // MARK: - Protocol
 extension TopMainViewController {
     func touchedRightButton(_ sender: UIButton) {
-//        画面遷移
+        let secondViewController = SecondViewController()
+        navigationController?.pushViewController(secondViewController, animated: true)
+        animatorManager.navigationType = .slide_push
     }
 }
 
