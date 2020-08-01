@@ -16,6 +16,10 @@
 		B4F8335A24D54C2D009F3771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4F8335824D54C2D009F3771 /* LaunchScreen.storyboard */; };
 		B4F8336324D54CB0009F3771 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8336124D54CB0009F3771 /* TopViewController.swift */; };
 		B4F8336424D54CB0009F3771 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8336224D54CB0009F3771 /* TopViewController.xib */; };
+		B4F8336724D558C2009F3771 /* TopMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8336524D558C2009F3771 /* TopMainView.swift */; };
+		B4F8336824D558C2009F3771 /* TopMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8336624D558C2009F3771 /* TopMainView.xib */; };
+		B4F8336B24D55932009F3771 /* TopMainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8336924D55932009F3771 /* TopMainViewCell.swift */; };
+		B4F8336C24D55932009F3771 /* TopMainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8336A24D55932009F3771 /* TopMainViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		B4F8335B24D54C2D009F3771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4F8336124D54CB0009F3771 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		B4F8336224D54CB0009F3771 /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
+		B4F8336524D558C2009F3771 /* TopMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopMainView.swift; path = ../../../../Documents/TopMainView.swift; sourceTree = "<group>"; };
+		B4F8336624D558C2009F3771 /* TopMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TopMainView.xib; path = ../../../../Documents/TopMainView.xib; sourceTree = "<group>"; };
+		B4F8336924D55932009F3771 /* TopMainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TopMainViewCell.swift; path = ../../../../Documents/TopMainViewCell.swift; sourceTree = "<group>"; };
+		B4F8336A24D55932009F3771 /* TopMainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TopMainViewCell.xib; path = ../../../../Documents/TopMainViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,10 @@
 				B4F8336224D54CB0009F3771 /* TopViewController.xib */,
 				B4F8334F24D54C2B009F3771 /* SceneDelegate.swift */,
 				B4F8335124D54C2B009F3771 /* ViewController.swift */,
+				B4F8336524D558C2009F3771 /* TopMainView.swift */,
+				B4F8336624D558C2009F3771 /* TopMainView.xib */,
+				B4F8336924D55932009F3771 /* TopMainViewCell.swift */,
+				B4F8336A24D55932009F3771 /* TopMainViewCell.xib */,
 				B4F8335324D54C2B009F3771 /* Main.storyboard */,
 				B4F8335624D54C2D009F3771 /* Assets.xcassets */,
 				B4F8335824D54C2D009F3771 /* LaunchScreen.storyboard */,
@@ -157,6 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F8336824D558C2009F3771 /* TopMainView.xib in Resources */,
+				B4F8336C24D55932009F3771 /* TopMainViewCell.xib in Resources */,
 				B4F8336424D54CB0009F3771 /* TopViewController.xib in Resources */,
 				B4F8335A24D54C2D009F3771 /* LaunchScreen.storyboard in Resources */,
 				B4F8335724D54C2D009F3771 /* Assets.xcassets in Resources */,
@@ -214,9 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4F8336324D54CB0009F3771 /* TopViewController.swift in Sources */,
+				B4F8336B24D55932009F3771 /* TopMainViewCell.swift in Sources */,
 				B4F8335224D54C2B009F3771 /* ViewController.swift in Sources */,
 				B4F8334E24D54C2B009F3771 /* AppDelegate.swift in Sources */,
 				B4F8335024D54C2B009F3771 /* SceneDelegate.swift in Sources */,
+				B4F8336724D558C2009F3771 /* TopMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

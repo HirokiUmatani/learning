@@ -7,24 +7,54 @@
 //
 
 import UIKit
+import PGFramework
 
-class TopViewController: UIViewController {
+// MARK: - Property
+class TopViewController: BaseViewController {
+    
+    
+    @IBOutlet weak var headerView: HeaderView!
+    
+    
+    @IBOutlet weak var homeView: TopMainView!
+    
+}
 
+// MARK: - Life cycle
+extension TopViewController {
+    override func loadView() {
+        super.loadView()
+        setDelegate()
+        setHeaderViewOne()
+        setHeaderViewOneTwo()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
-    */
+}
 
+// MARK: - Protocol
+extension TopViewController {
+    func touchedRightButton(_ sender: UIButton) {
+//        画面遷移
+    }
+}
+
+// MARK: - method
+extension TopViewController: HeaderViewDelegate {
+    func setDelegate() {
+        headerView.delegate = self
+    }
+    func setHeaderViewOne() {
+        headerView.setRight(text: "投稿")
+    }
+    func setHeaderViewOneTwo() {
+    headerView.setLeft(text: "")
+    }
+    
 }
