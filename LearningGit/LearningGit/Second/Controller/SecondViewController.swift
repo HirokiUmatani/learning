@@ -1,5 +1,5 @@
 //
-//  TopViewController.swift
+//  SecondViewController.swift
 //  LearningGit
 //
 //  Created by haruka on 2020/08/01.
@@ -10,11 +10,12 @@ import UIKit
 import PGFramework
 
 // MARK: - Property
-class TopViewController: <#Super Class#> {
+class SecondViewController: BaseViewController {
+    @IBOutlet weak var secondView: SecondMainView!
 }
 
 // MARK: - Life cycle
-extension TopViewController {
+extension SecondViewController {
     override func loadView() {
         super.loadView()
     }
@@ -29,9 +30,9 @@ extension TopViewController {
 }
 
 // MARK: - Protocol
-extension TopViewController {
+extension SecondViewController {
 }
 
 // MARK: - method
-extension TopViewController {
+extension SecondViewController {
 }
