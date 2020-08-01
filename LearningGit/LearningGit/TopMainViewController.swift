@@ -11,12 +11,22 @@ import PGFramework
 
 // MARK: - Property
 class TopMainViewController: BaseViewController {
+    
+    
+    @IBOutlet weak var headerView: HeaderView!
+    
+    
+    @IBOutlet weak var homeMainView: TopMainView!
+    
 }
 
 // MARK: - Life cycle
 extension TopMainViewController {
     override func loadView() {
         super.loadView()
+        setDelegate()
+        setHeaderViewRight()
+        setHeaderViewLeft()
     }
     
     override func viewDidLoad() {
@@ -30,8 +40,20 @@ extension TopMainViewController {
 
 // MARK: - Protocol
 extension TopMainViewController {
+    func touchedRightButton(_ sender: UIButton) {
+//        画面遷移
+    }
 }
 
 // MARK: - method
-extension TopMainViewController {
+extension TopMainViewController: HeaderViewDelegate {
+    func setDelegate() {
+        headerView.delegate = self
+    }
+    func setHeaderViewRight() {
+        headerView.setRight(text: "投稿")
+    }
+    func setHeaderViewLeft() {
+        headerView.setLeft(text: "")
+    }
 }

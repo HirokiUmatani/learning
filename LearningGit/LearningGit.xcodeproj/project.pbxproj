@@ -16,6 +16,10 @@
 		B43A99EA24D5332E000F1217 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B43A99E824D5332E000F1217 /* LaunchScreen.storyboard */; };
 		B4F8333324D534F2009F3771 /* TopMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8333124D534F2009F3771 /* TopMainViewController.swift */; };
 		B4F8333424D534F2009F3771 /* TopMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8333224D534F2009F3771 /* TopMainViewController.xib */; };
+		B4F8333B24D53851009F3771 /* TopMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8333924D53851009F3771 /* TopMainView.swift */; };
+		B4F8333C24D53851009F3771 /* TopMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8333A24D53851009F3771 /* TopMainView.xib */; };
+		B4F8333F24D5393C009F3771 /* TopMainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8333D24D5393C009F3771 /* TopMainViewCell.swift */; };
+		B4F8334024D5393C009F3771 /* TopMainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8333E24D5393C009F3771 /* TopMainViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 		B43A99EB24D5332E000F1217 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4F8333124D534F2009F3771 /* TopMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainViewController.swift; sourceTree = "<group>"; };
 		B4F8333224D534F2009F3771 /* TopMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainViewController.xib; sourceTree = "<group>"; };
+		B4F8333924D53851009F3771 /* TopMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainView.swift; sourceTree = "<group>"; };
+		B4F8333A24D53851009F3771 /* TopMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainView.xib; sourceTree = "<group>"; };
+		B4F8333D24D5393C009F3771 /* TopMainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainViewCell.swift; sourceTree = "<group>"; };
+		B4F8333E24D5393C009F3771 /* TopMainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainViewCell.xib; sourceTree = "<group>"; };
 		DE1B7C01A5B1BAC84544328B /* Pods-LearningGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningGit.debug.xcconfig"; path = "Target Support Files/Pods-LearningGit/Pods-LearningGit.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,8 +88,12 @@
 				B43A99DF24D5332D000F1217 /* SceneDelegate.swift */,
 				B4F8333124D534F2009F3771 /* TopMainViewController.swift */,
 				B4F8333224D534F2009F3771 /* TopMainViewController.xib */,
+				B4F8333D24D5393C009F3771 /* TopMainViewCell.swift */,
+				B4F8333E24D5393C009F3771 /* TopMainViewCell.xib */,
 				B43A99E124D5332D000F1217 /* ViewController.swift */,
 				B43A99E324D5332D000F1217 /* Main.storyboard */,
+				B4F8333924D53851009F3771 /* TopMainView.swift */,
+				B4F8333A24D53851009F3771 /* TopMainView.xib */,
 				B43A99E624D5332E000F1217 /* Assets.xcassets */,
 				B43A99E824D5332E000F1217 /* LaunchScreen.storyboard */,
 				B43A99EB24D5332E000F1217 /* Info.plist */,
@@ -157,6 +169,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F8333C24D53851009F3771 /* TopMainView.xib in Resources */,
+				B4F8334024D5393C009F3771 /* TopMainViewCell.xib in Resources */,
 				B43A99EA24D5332E000F1217 /* LaunchScreen.storyboard in Resources */,
 				B4F8333424D534F2009F3771 /* TopMainViewController.xib in Resources */,
 				B43A99E724D5332E000F1217 /* Assets.xcassets in Resources */,
@@ -214,9 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B43A99E224D5332D000F1217 /* ViewController.swift in Sources */,
+				B4F8333F24D5393C009F3771 /* TopMainViewCell.swift in Sources */,
 				B4F8333324D534F2009F3771 /* TopMainViewController.swift in Sources */,
 				B43A99DE24D5332D000F1217 /* AppDelegate.swift in Sources */,
 				B43A99E024D5332D000F1217 /* SceneDelegate.swift in Sources */,
+				B4F8333B24D53851009F3771 /* TopMainView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

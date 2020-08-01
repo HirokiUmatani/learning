@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopMainViewController" customModule="LearningGit" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="wvs-iP-Xjb" id="EBK-kO-B2X"/>
+                <outlet property="homeMainView" destination="pPg-b4-gi1" id="BNG-xI-1Ub"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,7 +26,7 @@
                         <constraint firstAttribute="height" constant="48" id="2qv-gd-zip"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-b4-gi1">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPg-b4-gi1" customClass="TopMainView" customModule="LearningGit" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
