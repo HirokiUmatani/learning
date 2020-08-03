@@ -17,7 +17,7 @@ extension ThirdMainViewDelegate {
 
 // MARK: - Property
 class ThirdMainView: BaseView {
-    @IBOutlet weak var thirdCollectionView: UICollectionView!
+    @IBOutlet weak var collectionView: UICollectionView!
     weak var delegate: ThirdMainViewDelegate? = nil
 }
 
@@ -25,8 +25,8 @@ class ThirdMainView: BaseView {
 extension ThirdMainView {
     override func awakeFromNib() {
         super.awakeFromNib()
-        thirdCollectionView.dataSource = self
-        loadCollectionViewCellFromXib(collectionView: thirdCollectionView, cellName: ThirdCollectionViewCell.className)
+        setDelegate()
+        loadCell()
     }
 }
 
@@ -37,7 +37,7 @@ extension ThirdMainView: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = thirdCollectionView.dequeueReusableCell(withReuseIdentifier: ThirdCollectionViewCell.className, for: indexPath) as? ThirdCollectionViewCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ThirdCollectionViewCell.className, for: indexPath) as? ThirdCollectionViewCell else {
             return UICollectionViewCell()
         }
         return cell
@@ -47,4 +47,10 @@ extension ThirdMainView: UICollectionViewDataSource {
 
 // MARK: - method
 extension ThirdMainView {
+    func setDelegate() {
+        collectionView.dataSource = self
+    }
+    func loadCell() {
+        loadCollectionViewCellFromXib(collectionView: collectionView, cellName: ThirdCollectionViewCell.className)
+    }
 }

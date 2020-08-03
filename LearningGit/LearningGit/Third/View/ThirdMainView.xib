@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdMainView" customModule="LearningGit" customModuleProvider="target">
             <connections>
-                <outlet property="thirdCollectionView" destination="7yD-22-N3W" id="x66-4L-etp"/>
+                <outlet property="collectionView" destination="7yD-22-N3W" id="g4k-HS-X95"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
