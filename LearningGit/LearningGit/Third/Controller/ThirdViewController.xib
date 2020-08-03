@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThirdViewController" customModule="LearningGit" customModuleProvider="target">
             <connections>
+                <outlet property="thirdHeaderVIew" destination="FUk-yx-xcs" id="pHB-Y7-nyf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

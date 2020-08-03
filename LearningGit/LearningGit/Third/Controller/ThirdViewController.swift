@@ -11,12 +11,15 @@ import PGFramework
 
 // MARK: - Property
 class ThirdViewController: BaseViewController {
+    @IBOutlet weak var thirdHeaderVIew: HeaderView!
 }
 
 // MARK: - Life cycle
 extension ThirdViewController {
     override func loadView() {
         super.loadView()
+        setDelegate()
+        setHeaderVIew()
     }
     
     override func viewDidLoad() {
@@ -29,9 +32,21 @@ extension ThirdViewController {
 }
 
 // MARK: - Protocol
-extension ThirdViewController {
+extension ThirdViewController: HeaderViewDelegate {
+    func touchedLeftButton(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+        animatorManager.navigationType = .slide_pop
+    }
 }
 
 // MARK: - method
 extension ThirdViewController {
+    func setDelegate() {
+        thirdHeaderVIew.delegate = self
+    }
+    func setHeaderVIew() {
+        thirdHeaderVIew.setLeft(text: "Back")
+        thirdHeaderVIew.setRight(text: "次へ")
+        thirdHeaderVIew.setCenter(text: "ThirdView")
+    }
 }
