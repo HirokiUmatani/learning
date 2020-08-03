@@ -37,6 +37,12 @@ extension SecondViewController: HeaderViewDelegate {
         navigationController?.popViewController(animated: true)
         animatorManager.navigationType = .slide_pop
     }
+    
+    func touchedRightButton(_ sender: UIButton) {
+        let thirdViewController = ThirdViewController()
+        navigationController?.pushViewController(thirdViewController, animated: true)
+        animatorManager.navigationType = .slide_push
+    }
 }
 
 // MARK: - method
@@ -47,5 +53,6 @@ extension SecondViewController {
     func setHeader() {
         secondHeader.setCenter(text: "Title")
         secondHeader.setLeft(text: "Back")
+        secondHeader.setRight(text: "次へ")
     }
 }
