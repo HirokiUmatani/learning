@@ -11,7 +11,7 @@ import PGFramework
 
 // MARK: - Property
 class SecondViewController: BaseViewController {
-    @IBOutlet weak var secondHeader: HeaderView!
+    @IBOutlet weak var headerView: HeaderView!
 }
 
 // MARK: - Life cycle
@@ -19,7 +19,7 @@ extension SecondViewController {
     override func loadView() {
         super.loadView()
         setDelegate()
-        setHeader()
+        setHeaderView()
     }
     
     override func viewDidLoad() {
@@ -48,11 +48,11 @@ extension SecondViewController: HeaderViewDelegate {
 // MARK: - method
 extension SecondViewController {
     func setDelegate() {
-        secondHeader.delegate = self
+        headerView.delegate = self
     }
-    func setHeader() {
-        secondHeader.setCenter(text: "Title")
-        secondHeader.setLeft(text: "Back")
-        secondHeader.setRight(text: "次へ")
+    func setHeaderView() {
+        headerView.setCenter(text: "Title")
+        headerView.setLeft(text: "Back")
+        headerView.setRight(text: "次へ")
     }
 }

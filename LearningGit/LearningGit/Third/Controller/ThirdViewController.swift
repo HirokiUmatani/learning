@@ -11,7 +11,7 @@ import PGFramework
 
 // MARK: - Property
 class ThirdViewController: BaseViewController {
-    @IBOutlet weak var thirdHeaderVIew: HeaderView!
+    @IBOutlet weak var headerView: HeaderView!
 }
 
 // MARK: - Life cycle
@@ -19,7 +19,7 @@ extension ThirdViewController {
     override func loadView() {
         super.loadView()
         setDelegate()
-        setHeaderVIew()
+        setHeaderView()
     }
     
     override func viewDidLoad() {
@@ -42,11 +42,11 @@ extension ThirdViewController: HeaderViewDelegate {
 // MARK: - method
 extension ThirdViewController {
     func setDelegate() {
-        thirdHeaderVIew.delegate = self
+        headerView.delegate = self
     }
-    func setHeaderVIew() {
-        thirdHeaderVIew.setLeft(text: "Back")
-        thirdHeaderVIew.setRight(text: "次へ")
-        thirdHeaderVIew.setCenter(text: "ThirdView")
+    func setHeaderView() {
+        headerView.setLeft(text: "Back")
+        headerView.setRight(text: "次へ")
+        headerView.setCenter(text: "ThirdView")
     }
 }

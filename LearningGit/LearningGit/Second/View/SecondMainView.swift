@@ -17,7 +17,7 @@ extension SecondMainViewDelegate {
 
 // MARK: - Property
 class SecondMainView: BaseView {
-    @IBOutlet weak var secondTable: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     weak var delegate: SecondMainViewDelegate? = nil
 }
 
@@ -37,7 +37,7 @@ extension SecondMainView: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = secondTable.dequeueReusableCell(withIdentifier: SecondMainViewCell.className, for: indexPath) as? SecondMainViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SecondMainViewCell.className, for: indexPath) as? SecondMainViewCell else {
             return UITableViewCell()
         }
         return cell
@@ -48,9 +48,9 @@ extension SecondMainView: UITableViewDataSource {
 // MARK: - method
 extension SecondMainView {
     func setDataSource() {
-        secondTable.dataSource = self
+        tableView.dataSource = self
     }
     func loadCell() {
-        loadTableViewCellFromXib(tableView: secondTable, cellName: SecondMainViewCell.className)
+        loadTableViewCellFromXib(tableView: tableView, cellName: SecondMainViewCell.className)
     }
 }
