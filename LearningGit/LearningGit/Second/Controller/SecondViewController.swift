@@ -33,6 +33,11 @@ extension SecondViewController {
 
 // MARK: - Protocol
 extension SecondViewController: HeaderViewDelegate {
+    func touchedLeftButton(_ sender: UIButton) {
+        let topMainViewController = TopMainViewController()
+        navigationController?.pushViewController(topMainViewController, animated: true)
+        animatorManager.navigationType = .slide_push
+    }
 }
 
 // MARK: - method
@@ -42,6 +47,6 @@ extension SecondViewController {
     }
     func setHeader() {
         secondHeader.setCenter(text: "Title")
-        secondHeader.setLeft(text: "")
+        secondHeader.setLeft(text: "Back")
     }
 }
