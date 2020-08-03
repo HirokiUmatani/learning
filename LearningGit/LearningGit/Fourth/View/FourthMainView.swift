@@ -17,10 +17,9 @@ extension FourthMainViewDelegate {
 
 // MARK: - Property
 class FourthMainView: BaseView {
+    
     weak var delegate: FourthMainViewDelegate? = nil
     
-    
- 
     @IBOutlet weak var collectionView: UICollectionView!
     
 }
@@ -39,13 +38,11 @@ extension FourthMainView: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 40
     }
-    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FourthMainViewCell.className, for: indexPath) as? FourthMainViewCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FourthMainViewCell.className, for: indexPath) as? FourthMainViewCell else { return UICollectionViewCell()
+        }
         return cell
     }
-    
-    
 }
 
 // MARK: - method

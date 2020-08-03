@@ -7,9 +7,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="LearningGit" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FourthViewController" customModule="LearningGit" customModuleProvider="target">
             <connections>
-                <outlet property="fourthHeaderView" destination="aP5-nu-GuD" id="WBS-ex-t3x"/>
+                <outlet property="headerView" destination="5HZ-dd-4YG" id="RXL-lg-N8p"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,30 +18,30 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aP5-nu-GuD" customClass="HeaderView" customModule="PGFramework">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5HZ-dd-4YG" customClass="HeaderView" customModule="PGFramework">
                     <rect key="frame" x="0.0" y="44" width="414" height="48"/>
                     <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="48" id="qjF-cN-Ev2"/>
+                        <constraint firstAttribute="height" constant="48" id="8YJ-Yv-gEc"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZH7-KO-oSh" customClass="FourthMainView" customModule="LearningGit" customModuleProvider="target">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QRK-u3-Dee" customClass="FourthMainView" customModule="LearningGit" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="92" width="414" height="770"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
             </subviews>
             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
             <constraints>
-                <constraint firstItem="aP5-nu-GuD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0cc-23-zAh"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ZH7-KO-oSh" secondAttribute="bottom" id="1Qg-h4-ixq"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZH7-KO-oSh" secondAttribute="trailing" id="HqT-bY-T02"/>
-                <constraint firstItem="aP5-nu-GuD" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="TkZ-OK-0Lc"/>
-                <constraint firstItem="ZH7-KO-oSh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UWn-ft-JGo"/>
-                <constraint firstItem="ZH7-KO-oSh" firstAttribute="top" secondItem="aP5-nu-GuD" secondAttribute="bottom" id="XdV-aW-gKK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aP5-nu-GuD" secondAttribute="trailing" id="l0b-T4-y8R"/>
+                <constraint firstItem="5HZ-dd-4YG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0iq-7d-kbe"/>
+                <constraint firstItem="QRK-u3-Dee" firstAttribute="top" secondItem="5HZ-dd-4YG" secondAttribute="bottom" id="Fee-CO-gGz"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5HZ-dd-4YG" secondAttribute="trailing" id="Pnk-1Z-J02"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QRK-u3-Dee" secondAttribute="bottom" id="SwF-lT-BHy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QRK-u3-Dee" secondAttribute="trailing" id="ZPq-3l-LPx"/>
+                <constraint firstItem="5HZ-dd-4YG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dMF-ot-U5H"/>
+                <constraint firstItem="QRK-u3-Dee" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gVB-db-Z2N"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+            <point key="canvasLocation" x="139" y="131"/>
         </view>
     </objects>
 </document>

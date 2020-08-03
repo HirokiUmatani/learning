@@ -1,5 +1,5 @@
 //
-//  TopViewController.swift
+//  FourthViewController.swift
 //  LearningGit
 //
 //  Created by むむ on 2020/08/03.
@@ -10,19 +10,18 @@ import UIKit
 import PGFramework
 
 // MARK: - Property
-class TopViewController: BaseViewController {
+class FourthViewController: BaseViewController {
     
-
-    @IBOutlet weak var fourthHeaderView: HeaderView!
+    @IBOutlet weak var headerView: HeaderView!
     
 }
 
 // MARK: - Life cycle
-extension TopViewController {
+extension FourthViewController {
     override func loadView() {
         super.loadView()
         setDelegate()
-        setHeaderVIew()
+        setHeaderView()
     }
     
     override func viewDidLoad() {
@@ -35,20 +34,19 @@ extension TopViewController {
 }
 
 // MARK: - Protocol
-extension TopViewController {
+extension FourthViewController {
     func touchedLeftButton(_ sender: UIButton) {
-    navigationController?.popViewController(animated: true)
-    animatorManager.navigationType = .slide_pop
+        navigationController?.popViewController(animated: true)
+        animatorManager.navigationType = .slide_pop
     }
 }
 
 // MARK: - method
-extension TopViewController: HeaderViewDelegate{
+extension FourthViewController: HeaderViewDelegate {
     func setDelegate() {
-        fourthHeaderView.delegate = self
+        headerView.delegate = self
     }
-    func setHeaderVIew() {
-    fourthHeaderView.setLeft(text: "Back")
+    func setHeaderView() {
+        headerView.setLeft(text: "戻る")
     }
-    
 }

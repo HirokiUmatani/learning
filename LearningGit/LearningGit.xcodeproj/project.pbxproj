@@ -19,12 +19,12 @@
 		B4F8333C24D53851009F3771 /* TopMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8333A24D53851009F3771 /* TopMainView.xib */; };
 		B4F8333F24D5393C009F3771 /* TopMainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8333D24D5393C009F3771 /* TopMainViewCell.swift */; };
 		B4F8334024D5393C009F3771 /* TopMainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8333E24D5393C009F3771 /* TopMainViewCell.xib */; };
-		B4F8337024D7E8AF009F3771 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8336E24D7E8AF009F3771 /* TopViewController.swift */; };
-		B4F8337124D7E8AF009F3771 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8336F24D7E8AF009F3771 /* TopViewController.xib */; };
 		B4F8337424D7E94A009F3771 /* FourthMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8337224D7E94A009F3771 /* FourthMainView.swift */; };
 		B4F8337524D7E94A009F3771 /* FourthMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8337324D7E94A009F3771 /* FourthMainView.xib */; };
 		B4F8337824D7EBE6009F3771 /* FourthMainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8337624D7EBE6009F3771 /* FourthMainViewCell.swift */; };
 		B4F8337924D7EBE6009F3771 /* FourthMainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8337724D7EBE6009F3771 /* FourthMainViewCell.xib */; };
+		B4F8337C24D8014F009F3771 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F8337A24D8014F009F3771 /* FourthViewController.swift */; };
+		B4F8337D24D8014F009F3771 /* FourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4F8337B24D8014F009F3771 /* FourthViewController.xib */; };
 		E91E157624D53D4800332BB7 /* SecondMainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E157424D53D4800332BB7 /* SecondMainViewCell.swift */; };
 		E91E157724D53D4800332BB7 /* SecondMainViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91E157524D53D4800332BB7 /* SecondMainViewCell.xib */; };
 		E91E157E24D53D7800332BB7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E157C24D53D7800332BB7 /* SecondViewController.swift */; };
@@ -55,12 +55,12 @@
 		B4F8333A24D53851009F3771 /* TopMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainView.xib; sourceTree = "<group>"; };
 		B4F8333D24D5393C009F3771 /* TopMainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopMainViewCell.swift; sourceTree = "<group>"; };
 		B4F8333E24D5393C009F3771 /* TopMainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopMainViewCell.xib; sourceTree = "<group>"; };
-		B4F8336E24D7E8AF009F3771 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
-		B4F8336F24D7E8AF009F3771 /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
 		B4F8337224D7E94A009F3771 /* FourthMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthMainView.swift; sourceTree = "<group>"; };
 		B4F8337324D7E94A009F3771 /* FourthMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthMainView.xib; sourceTree = "<group>"; };
 		B4F8337624D7EBE6009F3771 /* FourthMainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthMainViewCell.swift; sourceTree = "<group>"; };
 		B4F8337724D7EBE6009F3771 /* FourthMainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthMainViewCell.xib; sourceTree = "<group>"; };
+		B4F8337A24D8014F009F3771 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		B4F8337B24D8014F009F3771 /* FourthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FourthViewController.xib; sourceTree = "<group>"; };
 		DE1B7C01A5B1BAC84544328B /* Pods-LearningGit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningGit.debug.xcconfig"; path = "Target Support Files/Pods-LearningGit/Pods-LearningGit.debug.xcconfig"; sourceTree = "<group>"; };
 		E91E157424D53D4800332BB7 /* SecondMainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainViewCell.swift; sourceTree = "<group>"; };
 		E91E157524D53D4800332BB7 /* SecondMainViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondMainViewCell.xib; sourceTree = "<group>"; };
@@ -121,15 +121,10 @@
 				E91E15A024D7E69300332BB7 /* Third */,
 				E91E156324D534FD00332BB7 /* Second */,
 				B4F8336D24D7E86F009F3771 /* Fourth */,
-				B43A99DF24D5332D000F1217 /* SceneDelegate.swift */,
-				B4F8333124D534F2009F3771 /* TopMainViewController.swift */,
-				B4F8333224D534F2009F3771 /* TopMainViewController.xib */,
+				B4F8338224D80B98009F3771 /* Top */,
 				B43A99E324D5332D000F1217 /* Main.storyboard */,
+				B43A99DF24D5332D000F1217 /* SceneDelegate.swift */,
 				B43A99DD24D5332D000F1217 /* AppDelegate.swift */,
-				B4F8333D24D5393C009F3771 /* TopMainViewCell.swift */,
-				B4F8333E24D5393C009F3771 /* TopMainViewCell.xib */,
-				B4F8333924D53851009F3771 /* TopMainView.swift */,
-				B4F8333A24D53851009F3771 /* TopMainView.xib */,
 				B43A99E624D5332E000F1217 /* Assets.xcassets */,
 				B43A99E824D5332E000F1217 /* LaunchScreen.storyboard */,
 				B43A99EB24D5332E000F1217 /* Info.plist */,
@@ -140,14 +135,75 @@
 		B4F8336D24D7E86F009F3771 /* Fourth */ = {
 			isa = PBXGroup;
 			children = (
-				B4F8336E24D7E8AF009F3771 /* TopViewController.swift */,
-				B4F8336F24D7E8AF009F3771 /* TopViewController.xib */,
+				B4F8337E24D80795009F3771 /* Cell */,
+				B4F8337F24D807BD009F3771 /* Controller */,
+				B4F8338024D80804009F3771 /* View */,
+			);
+			path = Fourth;
+			sourceTree = "<group>";
+		};
+		B4F8337E24D80795009F3771 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
 				B4F8337624D7EBE6009F3771 /* FourthMainViewCell.swift */,
 				B4F8337724D7EBE6009F3771 /* FourthMainViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		B4F8337F24D807BD009F3771 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4F8337A24D8014F009F3771 /* FourthViewController.swift */,
+				B4F8337B24D8014F009F3771 /* FourthViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4F8338024D80804009F3771 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				B4F8337224D7E94A009F3771 /* FourthMainView.swift */,
 				B4F8337324D7E94A009F3771 /* FourthMainView.xib */,
 			);
-			path = Fourth;
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4F8338224D80B98009F3771 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				B4F8338624D80C03009F3771 /* Cell */,
+				B4F8338524D80BEF009F3771 /* View */,
+				B4F8338324D80BB8009F3771 /* Controller */,
+			);
+			path = Top;
+			sourceTree = "<group>";
+		};
+		B4F8338324D80BB8009F3771 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B4F8333124D534F2009F3771 /* TopMainViewController.swift */,
+				B4F8333224D534F2009F3771 /* TopMainViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B4F8338524D80BEF009F3771 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B4F8333924D53851009F3771 /* TopMainView.swift */,
+				B4F8333A24D53851009F3771 /* TopMainView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B4F8338624D80C03009F3771 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B4F8333D24D5393C009F3771 /* TopMainViewCell.swift */,
+				B4F8333E24D5393C009F3771 /* TopMainViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		E91E156324D534FD00332BB7 /* Second */ = {
@@ -292,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4F8337D24D8014F009F3771 /* FourthViewController.xib in Resources */,
 				B4F8333C24D53851009F3771 /* TopMainView.xib in Resources */,
 				B4F8334024D5393C009F3771 /* TopMainViewCell.xib in Resources */,
 				B4F8337524D7E94A009F3771 /* FourthMainView.xib in Resources */,
@@ -304,7 +361,6 @@
 				B43A99E524D5332D000F1217 /* Main.storyboard in Resources */,
 				E91E157724D53D4800332BB7 /* SecondMainViewCell.xib in Resources */,
 				E91E157F24D53D7800332BB7 /* SecondViewController.xib in Resources */,
-				B4F8337124D7E8AF009F3771 /* TopViewController.xib in Resources */,
 				E91E15AC24D7E6D800332BB7 /* ThirdMainView.xib in Resources */,
 				E91E158324D53D8600332BB7 /* SecondMainView.xib in Resources */,
 			);
@@ -361,7 +417,6 @@
 			files = (
 				B4F8333F24D5393C009F3771 /* TopMainViewCell.swift in Sources */,
 				B4F8333324D534F2009F3771 /* TopMainViewController.swift in Sources */,
-				B4F8337024D7E8AF009F3771 /* TopViewController.swift in Sources */,
 				B43A99DE24D5332D000F1217 /* AppDelegate.swift in Sources */,
 				B43A99E024D5332D000F1217 /* SceneDelegate.swift in Sources */,
 				E91E15B324D7E73F00332BB7 /* ThirdCollectionViewCell.swift in Sources */,
@@ -375,6 +430,7 @@
 				E91E15AF24D7E72100332BB7 /* ThirdViewController.swift in Sources */,
 				E91E157624D53D4800332BB7 /* SecondMainViewCell.swift in Sources */,
 				B4F8337424D7E94A009F3771 /* FourthMainView.swift in Sources */,
+				B4F8337C24D8014F009F3771 /* FourthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

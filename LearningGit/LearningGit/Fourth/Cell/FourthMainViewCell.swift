@@ -17,7 +17,9 @@ extension FourthMainViewCellDelegate {
 
 // MARK: - Property
 class FourthMainViewCell: BaseCollectionViewCell {
+    
     weak var delegate: FourthMainViewCellDelegate? = nil
+    
 }
 
 // MARK: - Life cycle

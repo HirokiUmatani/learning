@@ -38,11 +38,10 @@ extension ThirdViewController: HeaderViewDelegate {
         animatorManager.navigationType = .slide_pop
     }
     func touchedRightButton(_ sender: UIButton) {
-        let topViewController = TopViewController()
-        navigationController?.pushViewController(topViewController, animated: true)
+        let fourthViewController = FourthViewController()
+        navigationController?.pushViewController(fourthViewController, animated: true)
         animatorManager.navigationType = .slide_push
     }
-
 }
 
 // MARK: - method
