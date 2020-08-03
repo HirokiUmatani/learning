@@ -34,9 +34,8 @@ extension SecondViewController {
 // MARK: - Protocol
 extension SecondViewController: HeaderViewDelegate {
     func touchedLeftButton(_ sender: UIButton) {
-        let topMainViewController = TopMainViewController()
-        navigationController?.pushViewController(topMainViewController, animated: true)
-        animatorManager.navigationType = .slide_push
+        navigationController?.popViewController(animated: true)
+        animatorManager.navigationType = .slide_pop
     }
 }
 
