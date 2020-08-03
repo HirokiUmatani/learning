@@ -31,6 +31,12 @@
 		E91E157F24D53D7800332BB7 /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91E157D24D53D7800332BB7 /* SecondViewController.xib */; };
 		E91E158224D53D8600332BB7 /* SecondMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E158024D53D8600332BB7 /* SecondMainView.swift */; };
 		E91E158324D53D8600332BB7 /* SecondMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91E158124D53D8600332BB7 /* SecondMainView.xib */; };
+		E91E15AB24D7E6D800332BB7 /* ThirdMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E15A924D7E6D800332BB7 /* ThirdMainView.swift */; };
+		E91E15AC24D7E6D800332BB7 /* ThirdMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91E15AA24D7E6D800332BB7 /* ThirdMainView.xib */; };
+		E91E15AF24D7E72100332BB7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E15AD24D7E72100332BB7 /* ThirdViewController.swift */; };
+		E91E15B024D7E72100332BB7 /* ThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91E15AE24D7E72100332BB7 /* ThirdViewController.xib */; };
+		E91E15B324D7E73F00332BB7 /* ThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91E15B124D7E73F00332BB7 /* ThirdCollectionViewCell.swift */; };
+		E91E15B424D7E73F00332BB7 /* ThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E91E15B224D7E73F00332BB7 /* ThirdCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +68,12 @@
 		E91E157D24D53D7800332BB7 /* SecondViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondViewController.xib; sourceTree = "<group>"; };
 		E91E158024D53D8600332BB7 /* SecondMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondMainView.swift; sourceTree = "<group>"; };
 		E91E158124D53D8600332BB7 /* SecondMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondMainView.xib; sourceTree = "<group>"; };
+		E91E15A924D7E6D800332BB7 /* ThirdMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdMainView.swift; sourceTree = "<group>"; };
+		E91E15AA24D7E6D800332BB7 /* ThirdMainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdMainView.xib; sourceTree = "<group>"; };
+		E91E15AD24D7E72100332BB7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		E91E15AE24D7E72100332BB7 /* ThirdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdViewController.xib; sourceTree = "<group>"; };
+		E91E15B124D7E73F00332BB7 /* ThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCollectionViewCell.swift; sourceTree = "<group>"; };
+		E91E15B224D7E73F00332BB7 /* ThirdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ThirdCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +118,7 @@
 		B43A99DC24D5332D000F1217 /* LearningGit */ = {
 			isa = PBXGroup;
 			children = (
+				E91E15A024D7E69300332BB7 /* Third */,
 				E91E156324D534FD00332BB7 /* Second */,
 				B4F8336D24D7E86F009F3771 /* Fourth */,
 				B43A99DF24D5332D000F1217 /* SceneDelegate.swift */,
@@ -128,9 +141,9 @@
 			isa = PBXGroup;
 			children = (
 				B4F8336E24D7E8AF009F3771 /* TopViewController.swift */,
+				B4F8336F24D7E8AF009F3771 /* TopViewController.xib */,
 				B4F8337624D7EBE6009F3771 /* FourthMainViewCell.swift */,
 				B4F8337724D7EBE6009F3771 /* FourthMainViewCell.xib */,
-				B4F8336F24D7E8AF009F3771 /* TopViewController.xib */,
 				B4F8337224D7E94A009F3771 /* FourthMainView.swift */,
 				B4F8337324D7E94A009F3771 /* FourthMainView.xib */,
 			);
@@ -170,6 +183,43 @@
 			children = (
 				E91E157424D53D4800332BB7 /* SecondMainViewCell.swift */,
 				E91E157524D53D4800332BB7 /* SecondMainViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E91E15A024D7E69300332BB7 /* Third */ = {
+			isa = PBXGroup;
+			children = (
+				E91E15A324D7E6AD00332BB7 /* Cell */,
+				E91E15A224D7E6A800332BB7 /* View */,
+				E91E15A124D7E6A100332BB7 /* Controller */,
+			);
+			path = Third;
+			sourceTree = "<group>";
+		};
+		E91E15A124D7E6A100332BB7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E91E15AD24D7E72100332BB7 /* ThirdViewController.swift */,
+				E91E15AE24D7E72100332BB7 /* ThirdViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E91E15A224D7E6A800332BB7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E91E15A924D7E6D800332BB7 /* ThirdMainView.swift */,
+				E91E15AA24D7E6D800332BB7 /* ThirdMainView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E91E15A324D7E6AD00332BB7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E91E15B124D7E73F00332BB7 /* ThirdCollectionViewCell.swift */,
+				E91E15B224D7E73F00332BB7 /* ThirdCollectionViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -248,11 +298,14 @@
 				B4F8337924D7EBE6009F3771 /* FourthMainViewCell.xib in Resources */,
 				B43A99EA24D5332E000F1217 /* LaunchScreen.storyboard in Resources */,
 				B4F8333424D534F2009F3771 /* TopMainViewController.xib in Resources */,
+				E91E15B024D7E72100332BB7 /* ThirdViewController.xib in Resources */,
 				B43A99E724D5332E000F1217 /* Assets.xcassets in Resources */,
+				E91E15B424D7E73F00332BB7 /* ThirdCollectionViewCell.xib in Resources */,
 				B43A99E524D5332D000F1217 /* Main.storyboard in Resources */,
 				E91E157724D53D4800332BB7 /* SecondMainViewCell.xib in Resources */,
 				E91E157F24D53D7800332BB7 /* SecondViewController.xib in Resources */,
 				B4F8337124D7E8AF009F3771 /* TopViewController.xib in Resources */,
+				E91E15AC24D7E6D800332BB7 /* ThirdMainView.xib in Resources */,
 				E91E158324D53D8600332BB7 /* SecondMainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,12 +364,15 @@
 				B4F8337024D7E8AF009F3771 /* TopViewController.swift in Sources */,
 				B43A99DE24D5332D000F1217 /* AppDelegate.swift in Sources */,
 				B43A99E024D5332D000F1217 /* SceneDelegate.swift in Sources */,
+				E91E15B324D7E73F00332BB7 /* ThirdCollectionViewCell.swift in Sources */,
+				E91E15AB24D7E6D800332BB7 /* ThirdMainView.swift in Sources */,
 				B4F8333B24D53851009F3771 /* TopMainView.swift in Sources */,
 				B4F8337824D7EBE6009F3771 /* FourthMainViewCell.swift in Sources */,
 				E91E158224D53D8600332BB7 /* SecondMainView.swift in Sources */,
 				B43A99DE24D5332D000F1217 /* AppDelegate.swift in Sources */,
 				B43A99E024D5332D000F1217 /* SceneDelegate.swift in Sources */,
 				E91E157E24D53D7800332BB7 /* SecondViewController.swift in Sources */,
+				E91E15AF24D7E72100332BB7 /* ThirdViewController.swift in Sources */,
 				E91E157624D53D4800332BB7 /* SecondMainViewCell.swift in Sources */,
 				B4F8337424D7E94A009F3771 /* FourthMainView.swift in Sources */,
 			);

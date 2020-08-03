@@ -1,8 +1,8 @@
 //
-//  SecondViewController.swift
+//  ThirdViewController.swift
 //  LearningGit
 //
-//  Created by haruka on 2020/08/01.
+//  Created by haruka on 2020/08/03.
 //  Copyright © 2020 DEAUX. All rights reserved.
 //
 
@@ -10,16 +10,16 @@ import UIKit
 import PGFramework
 
 // MARK: - Property
-class SecondViewController: BaseViewController {
-    @IBOutlet weak var secondHeader: HeaderView!
+class ThirdViewController: BaseViewController {
+    @IBOutlet weak var thirdHeaderVIew: HeaderView!
 }
 
 // MARK: - Life cycle
-extension SecondViewController {
+extension ThirdViewController {
     override func loadView() {
         super.loadView()
         setDelegate()
-        setHeader()
+        setHeaderVIew()
     }
     
     override func viewDidLoad() {
@@ -32,27 +32,27 @@ extension SecondViewController {
 }
 
 // MARK: - Protocol
-extension SecondViewController: HeaderViewDelegate {
+extension ThirdViewController: HeaderViewDelegate {
     func touchedLeftButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
         animatorManager.navigationType = .slide_pop
     }
-    
     func touchedRightButton(_ sender: UIButton) {
-        let thirdViewController = ThirdViewController()
-        navigationController?.pushViewController(thirdViewController, animated: true)
+        let topViewController = TopViewController()
+        navigationController?.pushViewController(topViewController, animated: true)
         animatorManager.navigationType = .slide_push
     }
+
 }
 
 // MARK: - method
-extension SecondViewController {
+extension ThirdViewController {
     func setDelegate() {
-        secondHeader.delegate = self
+        thirdHeaderVIew.delegate = self
     }
-    func setHeader() {
-        secondHeader.setCenter(text: "Title")
-        secondHeader.setLeft(text: "Back")
-        secondHeader.setRight(text: "次へ")
+    func setHeaderVIew() {
+        thirdHeaderVIew.setLeft(text: "Back")
+        thirdHeaderVIew.setRight(text: "次へ")
+        thirdHeaderVIew.setCenter(text: "ThirdView")
     }
 }

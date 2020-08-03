@@ -11,12 +11,18 @@ import PGFramework
 
 // MARK: - Property
 class TopViewController: BaseViewController {
+    
+
+    @IBOutlet weak var fourthHeaderView: HeaderView!
+    
 }
 
 // MARK: - Life cycle
 extension TopViewController {
     override func loadView() {
         super.loadView()
+        setDelegate()
+        setHeaderVIew()
     }
     
     override func viewDidLoad() {
@@ -30,8 +36,19 @@ extension TopViewController {
 
 // MARK: - Protocol
 extension TopViewController {
+    func touchedLeftButton(_ sender: UIButton) {
+    navigationController?.popViewController(animated: true)
+    animatorManager.navigationType = .slide_pop
+    }
 }
 
 // MARK: - method
-extension TopViewController {
+extension TopViewController: HeaderViewDelegate{
+    func setDelegate() {
+        fourthHeaderView.delegate = self
+    }
+    func setHeaderVIew() {
+    fourthHeaderView.setLeft(text: "Back")
+    }
+    
 }
