@@ -40,12 +40,12 @@
                     <constraint firstItem="9Vy-sx-2Iy" firstAttribute="leading" secondItem="0uC-y5-HWx" secondAttribute="trailing" constant="12" id="3Bz-ya-Qoc"/>
                     <constraint firstAttribute="bottomMargin" secondItem="0uC-y5-HWx" secondAttribute="bottom" constant="4" id="8lJ-K0-UGf"/>
                     <constraint firstItem="9Vy-sx-2Iy" firstAttribute="top" secondItem="0uC-y5-HWx" secondAttribute="top" id="D9w-6T-ElF"/>
-                    <constraint firstItem="yeD-m6-ndd" firstAttribute="top" secondItem="9Vy-sx-2Iy" secondAttribute="bottom" constant="6" id="QXK-S0-PYb"/>
-                    <constraint firstItem="yeD-m6-ndd" firstAttribute="bottom" secondItem="0uC-y5-HWx" secondAttribute="bottom" id="V1N-Zq-wuL"/>
-                    <constraint firstItem="yeD-m6-ndd" firstAttribute="leading" secondItem="0uC-y5-HWx" secondAttribute="trailing" constant="12" id="jvU-h0-Uee"/>
+                    <constraint firstItem="yeD-m6-ndd" firstAttribute="top" secondItem="9Vy-sx-2Iy" secondAttribute="bottom" constant="6" id="LKL-z1-PsE"/>
+                    <constraint firstItem="yeD-m6-ndd" firstAttribute="leading" secondItem="0uC-y5-HWx" secondAttribute="trailing" constant="12" id="Nap-Vw-XVs"/>
                     <constraint firstItem="0uC-y5-HWx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="ntT-sf-um5"/>
                     <constraint firstAttribute="trailing" secondItem="9Vy-sx-2Iy" secondAttribute="trailing" constant="8" id="p4n-ew-Hms"/>
                     <constraint firstItem="0uC-y5-HWx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="tKM-kO-l9v"/>
+                    <constraint firstItem="yeD-m6-ndd" firstAttribute="bottom" secondItem="0uC-y5-HWx" secondAttribute="bottom" id="y82-K5-RlC"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
