@@ -1,8 +1,8 @@
 //
-//  ThirdViewController.swift
+//  FourthViewController.swift
 //  LearningGit
 //
-//  Created by haruka on 2020/08/03.
+//  Created by むむ on 2020/08/03.
 //  Copyright © 2020 DEAUX. All rights reserved.
 //
 
@@ -10,12 +10,14 @@ import UIKit
 import PGFramework
 
 // MARK: - Property
-class ThirdViewController: BaseViewController {
+class FourthViewController: BaseViewController {
+    
     @IBOutlet weak var headerView: HeaderView!
+    
 }
 
 // MARK: - Life cycle
-extension ThirdViewController {
+extension FourthViewController {
     override func loadView() {
         super.loadView()
         setDelegate()
@@ -32,26 +34,19 @@ extension ThirdViewController {
 }
 
 // MARK: - Protocol
-extension ThirdViewController: HeaderViewDelegate {
+extension FourthViewController {
     func touchedLeftButton(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
         animatorManager.navigationType = .slide_pop
     }
-    func touchedRightButton(_ sender: UIButton) {
-        let fourthViewController = FourthViewController()
-        navigationController?.pushViewController(fourthViewController, animated: true)
-        animatorManager.navigationType = .slide_push
-    }
 }
 
 // MARK: - method
-extension ThirdViewController {
+extension FourthViewController: HeaderViewDelegate {
     func setDelegate() {
         headerView.delegate = self
     }
     func setHeaderView() {
-        headerView.setLeft(text: "Back")
-        headerView.setRight(text: "次へ")
-        headerView.setCenter(text: "ThirdView")
+        headerView.setLeft(text: "戻る")
     }
 }
